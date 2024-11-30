@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const countdownElement = document.createElement('div');
+            countdownElement.id = 'countdown';
+            countdownElement.style.textAlign = 'center';
+            countdownElement.style.margin = '20px 0';
+            document.querySelector('.countdown-container').appendChild(countdownElement);
+
+            function updateCountdown() {
+                const now = new Date();
+                const eventDate = new Date(now.getFullYear(), 11, 6); // December 6
+                const currentTime = now.getTime();
+                const eventTime = eventDate.getTime();
+                const remainingTime = eventTime - currentTime;
+
+                const seconds = Math.floor((remainingTime / 1000) % 60);
+                const minutes = Math.floor((remainingTime / (1000 * 60)) % 60);
+                const hours = Math.floor((remainingTime / (1000 * 60 * 60)) % 24);
+                const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+
+                countdownElement.innerHTML = `
+                    <h2>Gyere vissza: </h2>
+                    <p>${days} Nap, ${hours} Óra, ${minutes} Perc, ${seconds} Másodperc múlva!</p>
+                `;
+            }
+
+            setInterval(updateCountdown, 1000);
+            updateCountdown();
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikulás</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ho Ho vajon mi van itt?</h1>
+    </header>
+    <main>
+        <div class="countdown-container">
+            <!-- Timer will be inserted here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Mikulás</p>
+    </footer>
+    <!-- Add the video element for falling snow -->
+    <video id="snow-video" autoplay loop muted>
+        <source src="Videos/falling-snow.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
