@@ -81,7 +81,7 @@ nav ul li a:hover {
 
 /* Footer styles */
 footer {
-    background: rgba(0, 128, 0, 1); /* Green background */
+    background: rgb(23, 0, 128); /* Green background */
     color: #fff;
     text-align: center;
     padding: 10px 0;
