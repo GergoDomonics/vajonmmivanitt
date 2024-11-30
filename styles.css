@@ -136,3 +136,29 @@ footer {
     pointer-events: none; /* Make sure the video doesn't interfere with user interactions */
     mix-blend-mode: screen; /* Apply blend mode to make black background transparent */
 }
+
+/* Style for the play button */
+#play-button {
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Pink background color */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Add transition for background color and transform */
+}
+
+#play-button:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+#play-button:active {
+    background-color: #c71585; /* Even darker pink on click */
+    transform: scale(0.95); /* Slightly shrink the button on click */
+}
