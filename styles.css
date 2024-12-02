@@ -81,7 +81,7 @@ nav ul li a:hover {
 
 /* Footer styles */
 footer {
-    background: rgb(23, 0, 128); /* Green background */
+    background: rgb(30, 128, 0, 1); /* Green background */
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -96,7 +96,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 40vh;
     position: relative;
     z-index: 1;
 }
@@ -161,4 +161,23 @@ footer {
 #play-button:active {
     background-color: #c71585; /* Even darker pink on click */
     transform: scale(0.95); /* Slightly shrink the button on click */
+}
+
+/* Style for the gift box */
+.gift-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#gift-box {
+    width: 200px;
+    height: 200x;
+    cursor: pointer;
+    transition: transform 0.3s; /* Add transition for transform */
+}
+
+#gift-box:hover {
+    transform: scale(1.1); /* Slightly enlarge the gift box on hover */
 }

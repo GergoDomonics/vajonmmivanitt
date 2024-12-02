@@ -44,12 +44,20 @@
         <div class="countdown-container">
             <!-- Timer will be inserted here -->
         </div>
+        <!-- Add the gift box image -->
+        <div class="gift-box-container">
+            <img id="gift-box" src="images/gift-box.png" alt="Gift Box">
+        </div>
     </main>
     <footer>
         <p>&copy; 2023 Mikulás</p>
     </footer>
     <audio id="background-music" loop>
         <source src="music/christmas-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="hoho-sound">
+        <source src="sounds/hoho.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
     <button id="play-button">Play Music</button>
@@ -61,6 +69,10 @@
     <script>
         document.getElementById('play-button').addEventListener('click', function() {
             document.getElementById('background-music').play();
+        });
+
+        document.getElementById('gift-box').addEventListener('click', function() {
+            document.getElementById('hoho-sound').play();
         });
     </script>
 </body>
