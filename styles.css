@@ -181,3 +181,23 @@ footer {
 #gift-box:hover {
     transform: scale(1.1); /* Slightly enlarge the gift box on hover */
 }
+
+
+#left-gif, #right-gif {
+    position: fixed;
+    top: 70%;
+    width: 300px;
+    height: auto;
+    transform: translateY(-50%);
+    z-index: 1;
+    border: none;
+    border-radius: 10px;
+}
+
+#left-gif {
+    left: 200px;
+}
+
+#right-gif {
+    right: 200px;
+}
