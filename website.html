@@ -46,18 +46,19 @@
         </div>
         <!-- Add the gift box image -->
         <div class="gift-box-container">
-            <img id="gift-box" src="Images/gift-box.png" alt="Gift Box">
+            <img id="gift-box" src="images/gift-box.png" alt="Gift Box">
+            <button id="open-page-button">Spoiler</button>
         </div>
     </main>
     <footer>
         <p>&copy; 2023 Mikulás</p>
     </footer>
     <audio id="background-music" loop>
-        <source src="music/christmas-music.mp3" type="audio/mpeg">
+        <source src="Music/christmas-music.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
     <audio id="hoho-sound">
-        <source src="sounds/hoho.mp3" type="audio/mpeg">
+        <source src="Sounds/hoho.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
     <button id="play-button">Play Music</button>
@@ -76,6 +77,10 @@
 
         document.getElementById('gift-box').addEventListener('click', function() {
             document.getElementById('hoho-sound').play();
+        });
+
+        document.getElementById('open-page-button').addEventListener('click', function() {
+            window.location.href = 'new-page.html'; // Replace with the path to your new page
         });
     </script>
 </body>

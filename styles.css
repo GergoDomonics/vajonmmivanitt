@@ -201,3 +201,26 @@ footer {
 #right-gif {
     right: 200px;
 }
+
+/* Style for the open page button */
+#open-page-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #008000; /* Green background color */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Add transition for background color and transform */
+}
+
+#open-page-button:hover {
+    background-color: #006400; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+#open-page-button:active {
+    background-color: #004d00; /* Even darker green on click */
+    transform: scale(0.95); /* Slightly shrink the button on click */
+}
