@@ -41,6 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Failed to play the hoho sound:', error);
         });
         // Uncomment the line below and replace with the path to your new page
-        // window.location.href = 'your-new-page-link.html';
+        window.location.href = 'https://cdn.discordapp.com/attachments/711522147012575233/1314537530313670726/FinalFina.mp4?ex=675421fa&is=6752d07a&hm=38b8fcfabf1395ac93d55880f757aa7a1c7c8fac96f8fc3f6c5fdeeb08a84f06&';
     });
 });
